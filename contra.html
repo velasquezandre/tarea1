@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Registrarse</title> 
+    <script>
+        function comprobarclave(){
+            clave1 = Document.f1.clave1.value
+            clave2 = Document.f1.clave2.value
+
+
+            if (clave1 == "jean" && clave2 == "santiago"){
+                Alert("los datos coinciden...\n Bienvenido");
+                var href = "index.html";
+                window.location=herf;
+                }
+        
+            else{
+                alert("Las dos claves son distintas...\n Intentalo nuevamente.");
+                var href = "dos.html";
+                window.location=herf;
+            };
+    }
+ 
+    </script>        
+</head> 
+
+<body bgcolor="#0080FF">
+        <CENTER><H1> <Comandos b&aacute;sicos
+ <H2> ¡Sea Bienvenido!</H2>
+
+        <h1></h1>
+
+        <br>
+         <FONT COLOR="#F7FE2E">Porfavor ingrese su Contraseña...
+    </header><br></FONT>  
+        
+        <br>
+        <form action="" name="f1">
+        contraseña: <input type="password" name="clave1" size="20">
+        <br>
+        confirmar contraseña: <input type="password" name="clave2" size="20">
+        <br>
+        <p>
+        <input type="button" value="Comprobar" onclick="comprobarclave()">
+    </form>
+</center>
+</body>
+</html>
+       
